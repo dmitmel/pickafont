@@ -1,0 +1,14 @@
+.opened-pane {
+    background: white;
+    box-shadow: 10px 10px 15px 0 $opened-pane-shadow-color;
+    padding: $opened-pane-padding;
+
+    & > .font-config {
+        margin-bottom: $opened-pane-font-config-margin;
+    }
+
+    & > .preview-text {
+        overflow: scroll;
+        max-width: $pane-width - $opened-pane-padding * 2;
+    }
+}

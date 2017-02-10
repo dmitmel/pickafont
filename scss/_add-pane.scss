@@ -1,0 +1,17 @@
+#add-pane {
+    border: $add-pane-border-width dashed $add-pane-color;
+    color: $add-pane-color;
+    font-size: $add-pane-font-size;
+    line-height: $pane-height;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+}
+
+#add-pane-text {
+    display: inline-block;
+    line-height: normal
+}
+
+#add-pane-icon {
+    font-size: $add-pane-icon-font-size;
+}

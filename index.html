@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>pickafont</title>
+
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" href="./fonts/FredokaOne.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div id="header" class="text-center">
+                <h1 id="title">pickafont</h1>
+                <p>Quickly pick best font for your project!</p>
+            </div>
+
+            <div id="panes" class="d-flex justify-content-center align-items-start flex-wrap">
+                <div class="pane opened-pane">
+                    <div class="font-config">
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font provider
+                                    <select class="form-control font-provider">
+                                        <option value="os" selected>OS</option>
+                                        <option value="google-fonts">Google Fonts</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Font
+                                    <input type="text" class="form-control font" placeholder="Font" value="Helvetica">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Foreground
+                                    <div class="input-group colorpicker-component">
+                                        <input type="text" class="form-control foreground" placeholder="Foreground" value="#292B2C">
+                                        <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Background
+                                    <div class="input-group colorpicker-component">
+                                        <input type="text" class="form-control background" placeholder="Background" value="#FFF">
+                                        <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font size
+                                    <input type="text" class="form-control font-size" placeholder="Font size" value="1em">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Line height
+                                    <input type="text" class="form-control line-height" placeholder="Line height" value="1.5em">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font weight
+                                    <select class="form-control font-weight">
+                                        <option value="100">100 - Thin</option>
+                                        <option value="200">200 - Extra-light</option>
+                                        <option value="300">300 - Light</option>
+                                        <option value="400" selected>400 - Normal</option>
+                                        <option value="500">500 - Medium</option>
+                                        <option value="600">600 - Semi-bold</option>
+                                        <option value="700">700 - Bold</option>
+                                        <option value="800">800 - Heavy</option>
+                                        <option value="900">900 - Black</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Font style
+                                    <select class="form-control font-style">
+                                        <option value="normal" selected>normal</option>
+                                        <option value="italic">italic</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.font-config -->
+                    </div>
+
+                    <p class="preview-text" contenteditable autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <!-- /.opened-pane -->
+                </div>
+
+                <div class="pane opened-pane">
+                    <div class="font-config">
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font provider
+                                    <select class="form-control font-provider">
+                                        <option value="os" selected>OS</option>
+                                        <option value="google-fonts">Google Fonts</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Font
+                                    <input type="text" class="form-control font" placeholder="Font" value="Helvetica Neue">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Foreground
+                                    <div class="input-group colorpicker-component">
+                                        <input type="text" class="form-control foreground" placeholder="Foreground" value="#292B2C">
+                                        <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Background
+                                    <div class="input-group colorpicker-component">
+                                        <input type="text" class="form-control background" placeholder="Background" value="#FFF">
+                                        <span class="input-group-addon">
+                                            <i></i>
+                                        </span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font size
+                                    <input type="text" class="form-control font-size" placeholder="Font size" value="1em">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Line height
+                                    <input type="text" class="form-control line-height" placeholder="Line height" value="1.5em">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col">
+                                <label>
+                                    Font weight
+                                    <select class="form-control font-weight">
+                                        <option value="100">100 - Thin</option>
+                                        <option value="200">200 - Extra-light</option>
+                                        <option value="300">300 - Light</option>
+                                        <option value="400" selected>400 - Normal</option>
+                                        <option value="500">500 - Medium</option>
+                                        <option value="600">600 - Semi-bold</option>
+                                        <option value="700">700 - Bold</option>
+                                        <option value="800">800 - Heavy</option>
+                                        <option value="900">900 - Black</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label>
+                                    Font style
+                                    <select class="form-control font-style">
+                                        <option value="normal" selected>normal</option>
+                                        <option value="italic">italic</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.font-config -->
+                    </div>
+
+                    <p class="preview-text" contenteditable autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <!-- /.opened-pane -->
+                </div>
+
+                <div id="add-pane" class="pane order-last text-center">
+                    <span id="add-pane-text">
+                        Add pane<br>
+                        <i id="add-pane-icon" class="fa fa-plus-circle"></i>
+                    </span>
+                </div>
+
+                <!-- /#panes -->
+            </div>
+        </div>
+
+        <script src="./bower_components/underscore/underscore-min.js"></script>
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./bower_components/tether/dist/js/tether.min.js"></script>
+        <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "pickafont",
+    "description": "Quickly pick best font for your project!",
+    "main": "index.html",
+    "authors": [
+        "dmitmel"
+    ],
+    "license": "Apache-2.0",
+    "keywords": [
+        "font",
+        "pick",
+        "utility"
+    ],
+    "homepage": "https://github.com/dmitmel/pickafont#readme",
+    "private": true,
+    "ignore": []
+}

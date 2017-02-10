@@ -1,0 +1,32 @@
+@import "_variables";
+@import "_util";
+@import "_opened-pane";
+@import "_add-pane";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka One', cursive;
+}
+
+body, button, input, optgroup, select, textarea {
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    background: $background;
+}
+
+#header {
+    margin: $header-margin;
+    margin-bottom: $header-margin-bottom;
+
+    & > #title {
+        font-size: $title-font-size;
+    }
+}
+
+#panes > .pane {
+    flex-basis: $pane-width;
+    height: $pane-height;
+    max-height: $pane-height;
+    margin: $pane-margin;
+}
