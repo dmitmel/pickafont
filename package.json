@@ -1,29 +1,35 @@
 {
-    "name": "pickafont",
-    "version": "0.0.1",
-    "description": "Quickly pick best font for your project!",
-    "main": "index.html",
-    "scripts": {
-        "compile-scss": "node_modules/.bin/node-sass -r scss -o css --output-style expanded --indent-width 4",
-        "compile-scss-watch": "node_modules/.bin/node-sass -r scss -o css --output-style expanded --indent-width 4 --watch"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/dmitmel/pickafont.git"
-    },
-    "keywords": [
-        "font",
-        "pick",
-        "utility"
-    ],
-    "author": "dmitmel",
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/dmitmel/pickafont/issues"
-    },
-    "homepage": "https://github.com/dmitmel/pickafont#readme",
-    "private": true,
-    "devDependencies": {
-        "node-sass": "^4.5.0"
-    }
+  "name": "pickafont",
+  "version": "0.0.1",
+  "description": "Quickly pick best font for your project!",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitmel/pickafont.git"
+  },
+  "keywords": [
+    "font",
+    "pick",
+    "utility"
+  ],
+  "author": "dmitmel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dmitmel/pickafont/issues"
+  },
+  "homepage": "https://github.com/dmitmel/pickafont#readme",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "node-sass": "^4.5.0",
+    "rimraf": "^2.5.4",
+    "uglify-js": "^2.7.5"
+  }
 }
