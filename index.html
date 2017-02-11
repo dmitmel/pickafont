@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <![endif]-->
 
         <title>pickafont</title>
 
@@ -23,6 +24,10 @@
 
             <div id="panes" class="d-flex justify-content-center align-items-start flex-wrap">
                 <div class="pane opened-pane">
+                    <div class="close-pane-container">
+                        <i class="fa fa-times pull-right close-pane enabled"></i><br>
+                    </div>
+
                     <div class="font-config">
                         <div class="form-group row">
                             <div class="col">
@@ -122,6 +127,10 @@
                 </div>
 
                 <div class="pane opened-pane">
+                    <div class="close-pane-container">
+                        <i class="fa fa-times pull-right close-pane enabled"></i><br>
+                    </div>
+
                     <div class="font-config">
                         <div class="form-group row">
                             <div class="col">
@@ -237,7 +246,7 @@
                         <a href="https://github.com/dmitmel">Dmytro Meleshko</a>
                     </p>
                     <p>
-                        This game was created using
+                        This utility was created using
                         <a href="http://getbootstrap.com/">Bootstrap</a>,
                         <a href="http://underscorejs.com/">Underscore.js</a>
                         and

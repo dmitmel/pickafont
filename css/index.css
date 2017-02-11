@@ -26,6 +26,18 @@
     max-width: 338px;
 }
 
+.opened-pane > .close-pane-container > .close-pane {
+    transition: color 0.15s linear;
+}
+
+.opened-pane > .close-pane-container > .close-pane.enabled {
+    color: #292B2C;
+}
+
+.opened-pane > .close-pane-container > .close-pane.disabled {
+    color: #8d9294;
+}
+
 #add-pane {
     border: 10px dashed #AAA;
     color: #AAA;

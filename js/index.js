@@ -7,22 +7,39 @@
         $openedOnLoadPanes = $panesContainer.find('.opened-pane'),
         $head = $('head');
 
-    var panes = $openedOnLoadPanes;
+    var panes = _.toArray($openedOnLoadPanes);
 
     function setupPane($pane) {
         var $previewText = $pane.find('.preview-text');
 
-        // Get pane height without padding
-        var paneInnerHeight = $pane.height();
-        // Get font config's height with padding
+        var paneInnerHeight = $pane.height(),
+            closePaneContainerHeight = $pane.find('.close-pane-container').height();
+        // Get font config's height with margin
         var fontConfigOuterHeight = $pane.find('.font-config')
             .outerHeight( /* includeMargin = */ true);
-        $previewText.css('max-height', paneInnerHeight - fontConfigOuterHeight);
+        $previewText.css('max-height', paneInnerHeight - closePaneContainerHeight - fontConfigOuterHeight);
 
         $previewText.on('input', function() {
             _.each(_.without(panes, $pane[0]), function(otherPreviewText) {
                 $(otherPreviewText).find('.preview-text').html($previewText.html());
             });
+        });
+
+        if (panes.length > 1)
+            $(panes).find('.close-pane-container > .close-pane').addClass('enabled').removeClass('disabled');
+        else
+            $(panes).find('.close-pane-container > .close-pane').addClass('disabled').removeClass('enabled');
+
+        $pane.find('.close-pane-container > .close-pane').on('click', function() {
+            if (panes.length > 1) {
+                $pane.remove();
+                panes = _.without(panes, $pane[0]);
+
+                if (panes.length == 1) {
+                    $(panes).find('.close-pane-container > .close-pane').addClass('disabled')
+                        .removeClass('enabled');
+                }
+            }
         });
 
         function setupFontProperty($input, onChange) {
@@ -76,9 +93,9 @@
     });
 
     $('#add-pane').on('click', function() {
-        var $pane = $panesContainer.find('.opened-pane').last().clone();
-        $panesContainer.append($pane);
+        var $pane = $(_.last(panes)).clone();
         panes.push($pane[0]);
+        $panesContainer.append($pane);
         setupPane($pane);
     });
 }());

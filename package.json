@@ -12,10 +12,10 @@
         "url": "git+https://github.com/dmitmel/pickafont.git"
     },
     "keywords": [
-    "font",
-    "pick",
-    "utility"
-  ],
+        "font",
+        "pick",
+        "utility"
+    ],
     "author": "dmitmel",
     "license": "Apache-2.0",
     "bugs": {

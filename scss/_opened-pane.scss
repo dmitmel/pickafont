@@ -11,4 +11,10 @@
         overflow: scroll;
         max-width: $pane-width - $opened-pane-padding * 2;
     }
+
+    & > .close-pane-container > .close-pane {
+        transition: color 0.15s linear;
+        &.enabled { color: $text-color; }
+        &.disabled { color: lighten($text-color, 40%); }
+    }
 }
